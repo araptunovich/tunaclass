@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>homepage</title>
+        <style type="text/css">
+
+            body {
+                margin: 2em; 
+            }
+            
+            #grid {
+                display: grid;
+                grid-template-columns: [start] 1fr [middle] 1fr [end];
+                grid-template-rows: auto 500px 200px;
+            }
+            
+/*            section {*/
+/*                border: 3px solid red;*/
+/*            }*/
+            
+            section.full_width {
+                grid-column: start / end;
+                background-color: lightpink;
+            }
+            
+            section.left_column {
+                grid-column: start / middle;
+                background-color: lightgreen;
+            }
+            
+            section.right_column {
+                grid-column: middle / end;
+                background-color: lightblue;
+            }
+            
+            section.label {
+                grid-column: start / end;
+                font-family: helvetica;
+                font-weight: bold;
+                font-size: 6em;
+                position: relative;
+                top: 30px;
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+        </style>
+    </head>       
+    <body>
+
+        <!-- header! -->
+        <header>
+            <div>
+            </div>
+            <nav>
+            </nav>
+        </header>
+
+
+
+        <div id="grid">
+            
+            <section class="label">
+                big type
+            </section>
+            
+            <section class="left_column">
+                <img src="daily%20sketch%2014.jpeg">
+            </section>  
+            
+            <section class="right_column">
+            </section>   
+            
+            <section class="full_width">
+                full width
+            </section>
+            
+            <section class="label">
+                section two
+            </section>
+            
+            <section class="full_width">
+                full width
+            </section>
+            
+            <section class="left_column">
+                <img src="daily%20sketch%2014.jpeg">
+            </section>  
+            
+            <section class="right_column">
+            </section>   
+            
+
+        </div>
+
+
+    </body>
+</html>
+
